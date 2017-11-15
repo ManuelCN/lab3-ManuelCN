@@ -47,7 +47,7 @@ public class MyPanelClass extends JPanel {
 //                        g.setColor(Color.WHITE);
 //                        g.fillOval(width/2-55/2, height/2-55/2, 55, 55);
                         
-                        //Draw Polygons.
+                        //Draw Polygons (arrow).
 //                        Polygon p = new Polygon();
 //                        p.addPoint(x1 + 5, y1 + 25);
 //                        p.addPoint(x1 + 20, y1 + 10);
@@ -59,20 +59,58 @@ public class MyPanelClass extends JPanel {
 //                        g.setColor(Color.YELLOW);
 //                        g.fillPolygon(p);
                         
-                        //Draw a second Polygon.
-                        Polygon p2 = new Polygon();
-                        p2.addPoint(x1 + 25, y1 + 73);
-                        p2.addPoint(x1 + 41, y1 + 73);
-                        p2.addPoint(x1 + 47, y1 + 58);
-                        p2.addPoint(x1 + 53, y1 + 73);
-                        p2.addPoint(x1 + 69, y1 + 73);
-                        p2.addPoint(x1 + 56, y1 + 83);
-                        p2.addPoint(x1 + 61, y1 + 98);
-                        p2.addPoint(x1 + 47, y1 + 88);
-                        p2.addPoint(x1 + 34, y1 + 98);
-                        p2.addPoint(x1 + 38, y1 + 83);
+                        //Draw a second Polygon (star).
+//                        Polygon p2 = new Polygon();
+//                        p2.addPoint(x1 + 25, y1 + 73);
+//                        p2.addPoint(x1 + 41, y1 + 73);
+//                        p2.addPoint(x1 + 47, y1 + 58);
+//                        p2.addPoint(x1 + 53, y1 + 73);
+//                        p2.addPoint(x1 + 69, y1 + 73);
+//                        p2.addPoint(x1 + 56, y1 + 83);
+//                        p2.addPoint(x1 + 61, y1 + 98);
+//                        p2.addPoint(x1 + 47, y1 + 88);
+//                        p2.addPoint(x1 + 34, y1 + 98);
+//                        p2.addPoint(x1 + 38, y1 + 83);
+//                        g.setColor(Color.WHITE);
+//                        g.drawPolygon(p2);
+                        
+                        //Nuestra Bandera.
+                        //Draws the rectangles.
+                        g.setColor(Color.RED);
+                        g.fillRect(x1+10, y1+10, 200, 28);
                         g.setColor(Color.WHITE);
-                        g.drawPolygon(p2);
+                        g.fillRect(x1+10, y1+38, 200, 28);
+                        g.setColor(Color.RED);
+                        g.fillRect(x1+10, y1+66, 200, 28);
+                        g.setColor(Color.WHITE);
+                        g.fillRect(x1+10, y1+94, 200, 28);
+                        g.setColor(Color.RED);
+                        g.fillRect(x1+10, y1+122, 200, 28);
+                        
+                        //Draws the triangle.
+                        Polygon triangle = new Polygon();
+                        triangle.addPoint(x1 + 10, y1 + 10);
+                        triangle.addPoint(x1 + 120, y1 + 80);
+                        triangle.addPoint(x1 + 10, y1 + 150);
+                        g.setColor(Color.BLUE);
+                        g.fillPolygon(triangle);
+                        
+                        
+                        //Draws the star
+                        Polygon star = new Polygon();
+                        star.addPoint(x1 + 25, y1 + 73);
+                        star.addPoint(x1 + 41, y1 + 73);
+                        star.addPoint(x1 + 47, y1 + 58);
+                        star.addPoint(x1 + 53, y1 + 73);
+                        star.addPoint(x1 + 69, y1 + 73);
+                        star.addPoint(x1 + 56, y1 + 83);
+                        star.addPoint(x1 + 61, y1 + 98);
+                        star.addPoint(x1 + 47, y1 + 88);
+                        star.addPoint(x1 + 34, y1 + 98);
+                        star.addPoint(x1 + 38, y1 + 83);
+                        g.setColor(Color.WHITE);
+                        g.fillPolygon(star);
+                                   
                         
             }
 }
